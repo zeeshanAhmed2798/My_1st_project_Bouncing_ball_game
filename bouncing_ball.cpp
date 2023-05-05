@@ -12,18 +12,18 @@
 #define MAXY 19
 
 using namespace std;
-void for_menu();
-int bricks[24][2] = { {2,7},{2,12},{2,17},{2,22},{2,27},{2,32},{2,37},{2,42},
+void for_menu(); // Proto_type.
+int bricks[24][2] = { {2,7},{2,12},{2,17},{2,22},{2,27},{2,32},{2,37},{2,42},// to display bricks, basically it is position of brics.It's right side show x-axis and left show y-axis.
 					 {4,7},{4,12},{4,17},{4,22},{4,27},{4,32},{4,37},{4,42},
 					 {6,7},{6,12},{6,17},{6,22},{6,27},{6,32},{6,37},{6,42}
 
 };
-int visible_bricks[24] = { 1,1,1,1,     1,1,1,1,     1,1,1,1,     1,1,1,1, 1,1,1,1,  1,1,1,1 };
-int bar_pos[2] = { 18,22 };
-int ball_pos[2] = { 17,26 };
-int dir = 1;
-int bricks_left = 24;
-int win = 0;
+int visible_bricks[24] = { 1,1,1,1,     1,1,1,1,     1,1,1,1,     1,1,1,1, 1,1,1,1,  1,1,1,1 };// for destroy bricks.
+int bar_pos[2] = { 18,22 };  //for slider position.
+int ball_pos[2] = { 17,26 };// for ball position.
+int dir = 1;                      // for directions.
+int bricks_left = 24;// to count left bricks.
+int win = 0;  
 int lose = 0;
 int start_ball = 0;
 int level = 0;
